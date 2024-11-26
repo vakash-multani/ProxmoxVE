@@ -5,14 +5,14 @@ echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨 It must be fun in the root folder of 
 echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨The LXC it creates should NOT be used for production. 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
 echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
 echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
-
+echo ""
 if [ ! -d "misc" ] || [ ! -d "ct" ] || [ ! -d "install" ] || [ ! -f "README.md" ]; then
     echo "🚨 Error: This script must be run from the root directory of the repository."
     echo "🚨 Ensure you're in the directory containing 'misc', 'ct', 'install', and 'README.md'."
     echo '🚨 Run the install script like $ bash ct/myapp.sh'
     exit 1
 fi
-
+echo ""
 echo "This script is about to run and will execute."
 read -p "Do you understand and want to proceed? (y/n): " CONFIRM
 if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
