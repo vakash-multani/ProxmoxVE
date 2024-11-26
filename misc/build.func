@@ -13,6 +13,13 @@ if [ ! -d "misc" ] || [ ! -d "ct" ] || [ ! -d "install" ] || [ ! -f "README.md" 
     exit 1
 fi
 
+echo "This script is about to run and will execute."
+read -p "Do you understand and want to proceed? (y/n): " CONFIRM
+if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
+    echo "Exiting. Script was not executed."
+    exit 0
+fi
+
 variables() {
   NSAPP=$(echo ${APP,,} | tr -d ' ') # This function sets the NSAPP variable by converting the value of the APP variable to lowercase and removing any spaces.
   var_install="${NSAPP}-install"     # sets the var_install variable by appending "-install" to the value of NSAPP.
