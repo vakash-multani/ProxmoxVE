@@ -1,3 +1,18 @@
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨This is a local debug script. It is UNOFFICIAL. 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨 It must be fun in the root folder of a checked out repo. 🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨The LXC it creates should NOT be used for production. 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+echo "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨"
+
+if [ ! -d "misc" ] || [ ! -d "ct" ] || [ ! -d "install" ] || [ ! -f "README.md" ]; then
+    echo "🚨 Error: This script must be run from the root directory of the repository."
+    echo "🚨 Ensure you're in the directory containing 'misc', 'ct', 'install', and 'README.md'."
+    echo '🚨 Run the install script like $ bash ct/myapp.sh'
+    exit 1
+fi
+
 variables() {
   NSAPP=$(echo ${APP,,} | tr -d ' ') # This function sets the NSAPP variable by converting the value of the APP variable to lowercase and removing any spaces.
   var_install="${NSAPP}-install"     # sets the var_install variable by appending "-install" to the value of NSAPP.
