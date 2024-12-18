@@ -273,6 +273,7 @@ apt-get -y autoclean
 
 ### 11.1 **Indentation**
 - Use 2 spaces for indentation for better readability.
+- Use the Shell Formater Extention for VS-Code
 
 ---
 
@@ -456,7 +457,7 @@ function update_script() {
 }
 ```
 
-## 4 **End of the Script##
+## 4 **End of the Script**
 - The script ends with a few function calls and a success Message.
 - With `echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"` you can point the user to the IP:PORT/folder needed to access the App.
 
@@ -475,6 +476,7 @@ echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"
 
 ### 5.1 **Indentation**
 - Use 2 spaces for indentation for better readability.
+- Use the Shell Formater Extention for VS-Code
 
 ---
 
@@ -496,4 +498,10 @@ echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"
 
  ## 1 **Json Generator**
  - To spare you some headache creating the json file, use the [Json-Editor](https://community-scripts.github.io/ProxmoxVE/json-editor) 
+
+
+
+---
+
+ "🚀 By following these essential coding standards, you'll transform your shell scripts into powerful, rock-solid tools that not only stand the test of time but also operate with peak efficiency and reliability. 🌟 They'll be fortified with robust security measures 🔐, ensuring they stay resilient against vulnerabilities, and structured in a way that makes them effortless to understand, update, and maintain. ✨ Whether you're writing a quick utility or managing complex automation, these principles are your ticket to creating scripts that truly shine! 💡💻"
 
