@@ -420,6 +420,7 @@ php artisan config:clear &>/dev/null
 - Move all userdata back in the Directory when the update is finnished.
 >[!WARNING]
 >This is not meant to be a permantent backup
+
 Example backup:
 ```bash
   mv /opt/snipe-it /opt/snipe-it-backup
