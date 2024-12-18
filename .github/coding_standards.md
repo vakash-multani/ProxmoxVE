@@ -503,5 +503,5 @@ echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"
 
 ---
 
- "🚀 By following these essential coding standards, you'll transform your shell scripts into powerful, rock-solid tools that not only stand the test of time but also operate with peak efficiency and reliability. 🌟 They'll be fortified with robust security measures 🔐, ensuring they stay resilient against vulnerabilities, and structured in a way that makes them effortless to understand, update, and maintain. ✨ Whether you're writing a quick utility or managing complex automation, these principles are your ticket to creating scripts that truly shine! 💡💻"
+ 🚀 By following these essential coding standards, you'll transform your shell scripts into powerful, rock-solid tools that not only stand the test of time but also operate with peak efficiency and reliability. 🌟 They'll be fortified with robust security measures 🔐, ensuring they stay resilient against vulnerabilities, and structured in a way that makes them effortless to understand, update, and maintain. ✨ Whether you're writing a quick utility or managing complex automation, these principles are your ticket to creating scripts that truly shine! 💡💻
 
