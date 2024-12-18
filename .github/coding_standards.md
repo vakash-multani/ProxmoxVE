@@ -439,6 +439,22 @@ Example:
   rm -rf /opt/snipe-it-backup
 ```
 
+### 3.7 **No update function**
+- In case you can not provide a update function use the following code to provide user feedback.
+```bash
+function update_script() {
+    header_info
+    check_container_storage
+    check_container_resources
+    if [[ ! -d /opt/snipeit ]]; then
+        msg_error "No ${APP} Installation Found!"
+        exit
+    fi
+    msg_error "Ther is currently no automatic update function for ${APP}."
+    exit
+}
+```
+
 ## 4 **End of the Script##
 - The script ends with a few function calls and a success Message.
 - With `echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"` you can point the user to the IP:PORT/folder needed to access the App.
